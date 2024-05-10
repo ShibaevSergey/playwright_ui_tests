@@ -1,5 +1,5 @@
-from data.traversal_page_data import TraversalPageData, TraversalPageLocators
-
-
 class Errors:
-    TRAVERSAL_DATA_ERROR = f'Текст {TraversalPageData.DATA} не найден в элементе с локатором {TraversalPageLocators.BREADCRUMB}'
+    COORD_X_ERROR = 'Неверная координата X'
+    COORD_Y_ERROR = 'Неверная координата Y'
+    WIDTH_ERROR = 'Неверная ширина'
+    HEIGHT_ERROR = 'Неверная высота'
