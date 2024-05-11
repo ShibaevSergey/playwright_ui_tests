@@ -7,7 +7,7 @@ class ButtonPageLocators:
 
 
 class ButtonPageData:
-    POSITION_BTN_X = 79.5
+    POSITION_BTN_X = 303.5
     POSITION_BTN_Y = 338
     POSITION_BTN_WIDTH = 176.21875
     POSITION_BTN_HEIGHT = 40
