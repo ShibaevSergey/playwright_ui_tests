@@ -21,10 +21,6 @@ class ButtonPage(BasePage):
         coordinates = box['x'], box['y']
         allure.attach(str(coordinates), 'Координаты', allure.attachment_type.TEXT)
 
-    @allure.step('Проверка цвета кнопки')
-    def expect_color_btn(self):
-        self.page.locator(self.locators.COLOR_BTN)
-
     @allure.step('Проверить ширину и длину кнопки')
     def expect_width_and_height_btn(self):
         box = self.page.locator(self.locators.PROPERTY_BTN).bounding_box()
