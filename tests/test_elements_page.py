@@ -1,5 +1,3 @@
-import time
-
 from pages.elements_page import ElementsPage
 
 
