@@ -6,7 +6,7 @@ class Links:
     ALERT = f'{HOST}/alert'
     FRAME = f'{HOST}/frame'
     RADIO = f'{HOST}/radio'
-    WINDOW = f'{HOST}/windows'
+    WINDOWS = f'{HOST}/windows'
     ELEMENTS = f'{HOST}/elements'
     DRAG = f'{HOST}/draggable'
     DROP = f'{HOST}/dropable'
