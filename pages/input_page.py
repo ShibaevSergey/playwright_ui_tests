@@ -1,6 +1,5 @@
 import allure
 from playwright.sync_api import expect
-
 from config.links import Links
 from data.input_page_data import InputPageLocators, InputPageData
 from pages.base_page import BasePage
