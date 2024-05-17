@@ -12,7 +12,7 @@ class MultiselectPage(BasePage):
     items = random.sample(data.ITEMS, 3)
     PAGE_URL = Links.MULTISELECT
 
-    @allure.step('Выбрать несколько элементов')
+    @allure.step('Выбрать три элемента')
     def select_multiple_item(self):
         self.page.keyboard.down('Control')
         try:
