@@ -1,5 +1,5 @@
 import allure
-from playwright.sync_api import Page, BrowserContext
+from playwright.sync_api import Page, Locator
 
 
 class BasePage:
@@ -26,3 +26,13 @@ class BasePage:
     def pause(self, timeout: int):
         with allure.step(f'Пауза на {timeout} миллисекунд'):
             self.page.wait_for_timeout(timeout)
+
+    @allure.step('Перенос одного элемента к другому')
+    def drag_and_drop(self, source: Locator, target: Locator):
+        source.hover()
+        self.page.mouse.down()
+        target.hover()
+        target.hover()
+        self.page.mouse.up()
+
+
