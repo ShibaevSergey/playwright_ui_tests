@@ -48,4 +48,4 @@ class ElementsPage(BasePage):
 
     @allure.step('Проверка количества ссылок на репозитории')
     def expect_repo_links_count(self):
-        assert len(self.links_repos) == int(os.getenv('GH_COUNT_PUBLICK_REPO')), Errors.GH_COUNT_REPO
+        assert len(self.links_repos) == int(os.getenv('GH_COUNT_PUBLICK_REPO')), Errors.GH_COUNT_REPO_ERROR
