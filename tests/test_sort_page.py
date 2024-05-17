@@ -1,5 +1,3 @@
-import time
-
 from pages.sort_page import SortPage
 from data.sort_page_data import SortPageData
 
