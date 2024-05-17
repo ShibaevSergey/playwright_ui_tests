@@ -22,3 +22,7 @@ class BasePage:
     def close(self):
         with allure.step(f'Закрыть вкладку {self.page.title()}'):
             self.page.close()
+
+    def pause(self, timeout: int):
+        with allure.step(f'Пауза на {timeout} миллисекунд'):
+            self.page.wait_for_timeout(timeout)

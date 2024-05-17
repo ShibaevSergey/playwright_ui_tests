@@ -32,6 +32,7 @@ class ElementsPage(BasePage):
     def print_all_info_about_profile(self):
         allure_text = []
         profile_name = self.page.get_by_placeholder(self.data.INPUT_PLACEHOLDER).input_value()
+        print(profile_name)
         allure_text.append(profile_name)
         tags_names = self.page.locator(self.locators.TAGS_NAMES).all()
         tags_values = self.page.locator(self.locators.TAGS_VALUES).all()
