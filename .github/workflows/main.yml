@@ -42,4 +42,5 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
-          HOME: /root
+          PERSONAL_TOKEN: ${{ secrets.PLAYWRIGHT_TOKEN }}
+          PUBLISH_DIR: allure-history
