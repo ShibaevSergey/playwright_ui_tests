@@ -17,7 +17,7 @@ class Links:
     ADVANCED_TABLE = f'{HOST}/advancedtable'
     CALENDAR = f'{HOST}/calendar'
     WAITS = f'{HOST}/waits'
-    FORMS = f'{HOST}/forms'
+    FORM = f'{HOST}/forms'
     FILE = f'{HOST}/file'
     SHADOW = f'{HOST}/shadow'
     SNAKE_GAME = f'{HOST}/game'

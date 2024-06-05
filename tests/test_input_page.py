@@ -1,4 +1,3 @@
-import time
 from pages.input_page import InputPage
 
 

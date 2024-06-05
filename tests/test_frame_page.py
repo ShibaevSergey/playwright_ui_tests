@@ -1,4 +1,7 @@
+import time
+
 from pages.frame_page import FramePage
+
 
 class TestFramePage:
     def test_frame_page(self, browser):
