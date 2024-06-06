@@ -1,0 +1,1 @@
+Bug found, Radio Button "Yes" and Radio Button "No" is checked

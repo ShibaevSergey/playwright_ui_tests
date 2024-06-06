@@ -1,0 +1,7 @@
+ShibaevSergey
+Public Repos 3
+Public Gist 0
+Followers 0
+https://github.com/ShibaevSergey/playwright_ts_project
+https://github.com/ShibaevSergey/playwright_ui_tests
+https://github.com/ShibaevSergey/SeleniumAutoCourse
