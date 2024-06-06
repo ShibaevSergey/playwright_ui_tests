@@ -8,7 +8,7 @@ from settings import ROOT_DIR
 @pytest.fixture(scope='function')
 def browser() -> Page:
     playwright = sync_playwright().start()
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context(ignore_https_errors=True, viewport={'width': 1920, 'height': 1080})
     page = context.new_page()
     yield page
