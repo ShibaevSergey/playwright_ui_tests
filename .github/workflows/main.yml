@@ -24,8 +24,9 @@ jobs:
         run: playwright install --with-deps
       - name: cp .env file
         run: cp .env.draft .env
-      - name: Run your tests
+      - name: Run tests
         run: pytest
+
       - name: Load test report history
         uses: actions/checkout@v3
         if: always()
@@ -33,6 +34,7 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
+
       - name: Build test report
         uses: simple-elf/allure-report-action@v1.7
         if: always()
@@ -40,6 +42,7 @@ jobs:
           gh_pages: gh-pages
           allure_history: allure-history
           allure_results: build/allure-results
+
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
